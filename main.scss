@@ -10,6 +10,8 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 html {
@@ -19,6 +21,26 @@ html {
 
 body {
   font-family: "Libre Franklin", sans-serif;
-  min-height: 100vh;
   font-size: 2rem;
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - 15rem);
+  max-width: 1440px;
+  margin: 7.5rem auto;
+  background-color: #eee;
+}
+
+.logo-box {
+  text-align: center;
+}
+
+.social-icon-list {
+  display: flex;
+}
+
+.social-link {
+  height: 2rem;
+  width: 2rem;
 }

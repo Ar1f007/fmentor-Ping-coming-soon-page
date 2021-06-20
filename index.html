@@ -18,6 +18,14 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Frontend Mentor | Ping coming soon page</title>
@@ -34,13 +42,57 @@
     </style>
   </head>
   <body>
-    <!-- We are launching soon!
+    <div class="container">
+      <div class="logo-box">
+        <img src="images/logo.svg" alt="logo" class="logo" />
+      </div>
 
-  Subscribe and get notified
+      <div class="text-box">
+        <h1 class="text-box__heading">We are launching <span>soon!</span></h1>
+        <p class="text-box__text">Subscribe and get notified</p>
+      </div>
 
-  Notify Me
+      <div class="notify-box">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email address"
+          class="notify__input"
+        />
+        <button type="submit" class="notify__btn">Notify Me</button>
+      </div>
 
-  &copy; Copyright Ping. All rights reserved. -->
+      <div class="dashboard">
+        <img
+          src="images/illustration-dashboard.png"
+          alt="dashboard"
+          class="dashboard__img"
+        />
+      </div>
+
+      <ul class="social-icon-list">
+        <li class="social-item">
+          <a href="#" class="social__link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="#" class="social__link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="#" class="social__link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+    </div>
 
     <footer>
       <p class="attribution">
