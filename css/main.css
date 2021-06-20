@@ -1,0 +1,24 @@
+:root {
+  --primary-color-blue: hsl(223, 87%, 63%);
+  --secondary-color-pale-blue: hsl(223, 100%, 88%);
+  --secondary-color-light-red: hsl(354, 100%, 66%);
+  --neutral-gray: hsl(0, 0%, 59%);
+  --neutral-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  min-height: 100vh;
+  font-size: 2rem;
+}/*# sourceMappingURL=main.css.map */
