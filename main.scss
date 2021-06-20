@@ -27,17 +27,33 @@ body {
 
 .container {
   width: 100%;
-  height: calc(100vh - 11rem);
+  min-height: calc(100vh - 11rem);
   max-width: 1440px;
   margin: 5.5rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 48em) {
+    height: auto;
+  }
+
+  @media screen and (max-width: 27em) {
+    margin: 3.5rem 0;
+  }
 }
 
 .logo-box {
   text-align: center;
-  margin: 5rem 0 3.5rem;
+  margin: 0 0 3.5rem;
+
+  @media screen and (max-width: 27em) {
+    margin: 3.5rem 0;
+
+    .logo {
+      height: 2.2rem;
+    }
+  }
 }
 
 .text-box {
@@ -53,11 +69,19 @@ body {
       color: var(--neutral-dark-blue);
       font-weight: 700;
     }
+
+    @media screen and (max-width: 27em) {
+      font-size: 2.8rem;
+    }
   }
 
   &__text {
     font-size: 1.7rem;
     color: var(--neutral-dark-blue);
+
+    @media screen and (max-width: 27em) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -66,13 +90,28 @@ body {
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 48em) {
+    width: 65%;
+  }
+
+  @media screen and (max-width: 27em) {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
   &__input {
     width: 70%;
     padding: 1.3rem 2rem;
     border-radius: 25px;
-    border: 1px solid var(--neutral-light-gray);
+    border: 1px solid var(--secondary-color-pale-blue);
     display: inline-block;
     color: var(--neutral-gray);
+
+    @media screen and (max-width: 27em) {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
   }
 
   ::placeholder {
@@ -92,12 +131,24 @@ body {
     background-color: var(--primary-color-blue);
     color: #fff;
     cursor: pointer;
+    @media screen and (max-width: 27em) {
+      width: 100%;
+    }
   }
 }
 
 .dashboard {
   width: 37%;
   margin: 6rem 0;
+
+  @media screen and (max-width: 48em) {
+    width: 65%;
+  }
+
+  @media screen and (max-width: 27em) {
+    width: 85%;
+    margin-bottom: 8rem;
+  }
 
   &__img {
     width: 100%;
@@ -108,12 +159,12 @@ body {
   &__icon-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
   }
 
   &__item {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border: 0.5px solid var(--neutral-light-gray);
     border-radius: 50%;
     background-color: #fff;
@@ -129,6 +180,7 @@ body {
 
   &__link i {
     color: var(--primary-color-blue);
+    font-size: 1.7rem;
   }
 
   &__item:hover {
@@ -143,4 +195,8 @@ body {
   font-size: 1.4rem;
   font-weight: 300;
   color: var(--neutral-gray);
+
+  @media screen and (max-width: 27em) {
+    font-size: 1.2rem;
+  }
 }
