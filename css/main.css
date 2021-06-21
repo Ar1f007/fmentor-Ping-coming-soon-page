@@ -38,6 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 @media screen and (max-width: 48em) {
   .container {
@@ -97,6 +98,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  font-family: inherit;
 }
 @media screen and (max-width: 48em) {
   .form {
@@ -110,11 +112,11 @@ body {
     margin: auto;
   }
 }
-.form__input-group {
+.form .input-group {
   width: 70%;
 }
 @media screen and (max-width: 27em) {
-  .form__input-group {
+  .form .input-group {
     width: 100%;
   }
 }
@@ -147,7 +149,7 @@ body {
   width: 100%;
   font-size: 1.2rem;
   color: var(--secondary-color-light-red);
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 2rem;
   opacity: 0;
   visibility: hidden;
 }
@@ -160,7 +162,7 @@ body {
 }
 @media screen and (max-width: 27em) {
   .form .change .form__error {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
   }
 }
@@ -178,6 +180,7 @@ body {
 @media screen and (max-width: 27em) {
   .form__btn {
     width: 100%;
+    margin-top: -2rem;
   }
 }
 
@@ -240,4 +243,18 @@ body {
   .copyright {
     font-size: 1.2rem;
   }
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  bottom: -5rem;
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.attribution a {
+  color: #3e52a3;
 }/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,4 @@
+// Common styles
 :root {
   --primary-color-blue: hsl(223, 87%, 63%);
   --secondary-color-pale-blue: hsl(223, 100%, 88%);
@@ -29,6 +30,7 @@ body {
   font-size: 2rem;
 }
 
+// Main container
 .container {
   width: 100%;
   min-height: calc(100vh - 11rem);
@@ -37,6 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   @media screen and (max-width: 48em) {
     height: auto;
@@ -47,6 +50,7 @@ body {
   }
 }
 
+// Logo
 .logo-box {
   text-align: center;
   margin: 0 0 3.5rem;
@@ -89,11 +93,13 @@ body {
   }
 }
 
+// Form
 .form {
   width: 37%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  font-family: inherit;
 
   @media screen and (max-width: 48em) {
     width: 65%;
@@ -104,7 +110,8 @@ body {
     width: 80%;
     margin: auto;
   }
-  &__input-group {
+
+  .input-group {
     width: 70%;
 
     @media screen and (max-width: 27em) {
@@ -138,7 +145,7 @@ body {
     width: 100%;
     font-size: 1.2rem;
     color: var(--secondary-color-light-red);
-    padding: 0.5rem 2rem;
+    padding: 0.8rem 2rem;
     opacity: 0;
     visibility: hidden;
   }
@@ -150,7 +157,7 @@ body {
     opacity: 1;
     visibility: visible;
     @media screen and (max-width: 27em) {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       text-align: center;
     }
   }
@@ -167,10 +174,12 @@ body {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
     @media screen and (max-width: 27em) {
       width: 100%;
+      margin-top: -2rem;
     }
   }
 }
 
+// Dashboard
 .dashboard {
   width: 37%;
   margin: 4rem 0 6rem;
@@ -189,6 +198,7 @@ body {
   }
 }
 
+// Social Icons
 .social {
   &__icon-list {
     display: flex;
@@ -225,6 +235,7 @@ body {
   }
 }
 
+// Copyright
 .copyright {
   font-size: 1.4rem;
   font-weight: 300;
@@ -233,4 +244,19 @@ body {
   @media screen and (max-width: 27em) {
     font-size: 1.2rem;
   }
+}
+
+// Attribution
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  bottom: -5rem;
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
