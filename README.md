@@ -51,5 +51,5 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@Ar1f007](https://www.frontendmentor.io/profile/Ar1f007)
-- Twitter - [@Ar1f007](https://twitter.com/Ariif_007)
+- Twitter - [@Ar1f007](https://twitter.com/Ar1f_007)
 - Instagram - [@\_4r1f](https://www.instagram.com/_4r1f)
