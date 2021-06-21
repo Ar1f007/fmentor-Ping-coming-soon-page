@@ -53,13 +53,17 @@
       </div>
 
       <form action="#" class="form">
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Your email address"
-          class="form__input"
-        />
+        <div class="input-group">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Your email address"
+            class="form__input"
+          />
+          <p class="form__error">Please provide a valid email address</p>
+        </div>
+
         <button type="submit" class="form__btn">Notify Me</button>
       </form>
 
@@ -104,5 +108,7 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

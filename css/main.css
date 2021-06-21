@@ -19,6 +19,11 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+@media screen and (min-width: 110em) {
+  html {
+    font-size: 70%;
+  }
+}
 
 body {
   font-family: "Libre Franklin", sans-serif;
@@ -90,6 +95,7 @@ body {
 .form {
   width: 37%;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 @media screen and (max-width: 48em) {
@@ -104,8 +110,16 @@ body {
     margin: auto;
   }
 }
-.form__input {
+.form__input-group {
   width: 70%;
+}
+@media screen and (max-width: 27em) {
+  .form__input-group {
+    width: 100%;
+  }
+}
+.form__input {
+  width: 100%;
   padding: 1.3rem 2rem;
   border-radius: 25px;
   border: 1px solid var(--secondary-color-pale-blue);
@@ -115,7 +129,6 @@ body {
 @media screen and (max-width: 27em) {
   .form__input {
     width: 100%;
-    margin-bottom: 1rem;
   }
 }
 .form ::-moz-placeholder {
@@ -130,6 +143,27 @@ body {
 .form__input:focus {
   outline: none;
 }
+.form .form__error {
+  width: 100%;
+  font-size: 1.2rem;
+  color: var(--secondary-color-light-red);
+  padding: 0.5rem 2rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.form .change .form__input {
+  border: 1px solid var(--secondary-color-light-red);
+}
+.form .change .form__error {
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (max-width: 27em) {
+  .form .change .form__error {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
 .form__btn {
   width: 28%;
   display: inline-block;
@@ -139,6 +173,7 @@ body {
   background-color: var(--primary-color-blue);
   color: #fff;
   cursor: pointer;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 27em) {
   .form__btn {
@@ -148,7 +183,7 @@ body {
 
 .dashboard {
   width: 37%;
-  margin: 6rem 0;
+  margin: 4rem 0 6rem;
 }
 @media screen and (max-width: 48em) {
   .dashboard {
