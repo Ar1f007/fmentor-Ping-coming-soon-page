@@ -120,6 +120,11 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 24em) {
+  .form .input-group {
+    margin-bottom: 2.5rem;
+  }
+}
 .form__input {
   width: 100%;
   padding: 1.3rem 2rem;
@@ -131,6 +136,11 @@ body {
 @media screen and (max-width: 27em) {
   .form__input {
     width: 100%;
+  }
+}
+@media screen and (max-width: 24em) {
+  .form__input {
+    margin-bottom: 0.5rem;
   }
 }
 .form ::-moz-placeholder {
@@ -257,4 +267,4 @@ body {
 
 .attribution a {
   color: #3e52a3;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
