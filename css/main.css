@@ -138,11 +138,6 @@ body {
     width: 100%;
   }
 }
-@media screen and (max-width: 24em) {
-  .form__input {
-    margin-bottom: 0.5rem;
-  }
-}
 .form ::-moz-placeholder {
   color: var(--neutral-light-gray);
 }
@@ -187,10 +182,17 @@ body {
   cursor: pointer;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
+
 @media screen and (max-width: 27em) {
   .form__btn {
     width: 100%;
-    margin-top: -2rem;
+    margin-top: -3rem;
+  }
+}
+@media screen and (min-width: 25em) and (max-width: 32em) {
+  .form__btn {
+    width: 100%;
+    margin-top: -0.5rem;
   }
 }
 
